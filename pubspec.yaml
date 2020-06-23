@@ -24,14 +24,14 @@ dependencies:
   moor_ffi: ^0.6.0
   
   # Helper to find the database path on mobile
-  path_provider: 
+  path_provider: ^1.6.5
   path: 
 
-  path_provider_fde:
-    git:
-      url: git://github.com/google/flutter-desktop-embedding.git
-      path: plugins/flutter_plugins/path_provider_fde
-      ref: b9c7e27ba16f86ff3390cfb0e460802e9980399a
+  # path_provider_fde:
+  #   git:
+  #     url: git://github.com/google/flutter-desktop-embedding.git
+  #     path: plugins/flutter_plugins/path_provider_fde
+  #     ref: b9c7e27ba16f86ff3390cfb0e460802e9980399a
   
 
   # Web
