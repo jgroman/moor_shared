@@ -25,7 +25,7 @@ class HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Todo list'),
+        title: Text('Todo List'),
       ),
       drawer: CategoriesDrawer(),
       body: StreamBuilder<List<EntryWithCategory>>(

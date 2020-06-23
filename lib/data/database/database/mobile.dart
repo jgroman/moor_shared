@@ -17,13 +17,16 @@ Database constructDb({bool logStatements = false}) {
     });
     return Database(executor);
   }
+
   if (Platform.isMacOS || Platform.isLinux) {
     final file = File('db.sqlite');
     return Database(VmDatabase(file, logStatements: logStatements));
   }
-  // if (Platform.isWindows) {
-  //   final file = File('db.sqlite');
-  //   return Database(VMDatabase(file, logStatements: logStatements));
-  // }
+
+  if (Platform.isWindows) {
+    final file = File('db.sqlite');
+    return Database(VmDatabase(file, logStatements: logStatements));
+  }
+
   return Database(VmDatabase.memory(logStatements: logStatements));
 }
